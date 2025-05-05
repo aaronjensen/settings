@@ -1,4 +1,4 @@
-require_relative '../../automated_init'
+require_relative "../../automated_init"
 
 context "Set" do
   context "From a Namespace" do
@@ -7,10 +7,10 @@ context "Set" do
 
       settings = Controls::Settings::Namespace.example
 
-      settings.set(example, 'some_namespace')
+      settings.set(example, "some_namespace")
 
       test "Assigns data to the attributes" do
-        assert(example.some_setting == 'some value')
+        assert(example.some_setting == "some value")
       end
     end
 

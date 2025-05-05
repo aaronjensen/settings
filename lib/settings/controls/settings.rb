@@ -38,7 +38,7 @@ class Settings
 
         def self.data
           {
-            'some_accessor_attribute' => 'some accessor value'
+            "some_accessor_attribute" => "some accessor value"
           }
         end
       end

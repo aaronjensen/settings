@@ -1,4 +1,4 @@
-require_relative '../automated_init'
+require_relative "../automated_init"
 
 context "Get Setting" do
   context "Symbol Discriminator" do
@@ -7,7 +7,7 @@ context "Get Setting" do
     value = settings.get(:some_setting)
 
     test "Gets the setting's value" do
-      assert(value == 'some value')
+      assert(value == "some value")
     end
   end
 end

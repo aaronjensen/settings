@@ -1,4 +1,4 @@
-require_relative './automated_init'
+require_relative "./automated_init"
 
 context "Setting Macro" do
   context "Generated Attribute" do

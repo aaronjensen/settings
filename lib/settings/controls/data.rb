@@ -5,7 +5,7 @@ class Settings
         module Single
           def self.example
             {
-              'some_setting' => 'some value'
+              "some_setting" => "some value"
             }
           end
         end
@@ -13,8 +13,8 @@ class Settings
         module Multiple
           def self.example
             {
-              'some_setting' => 'some value',
-              'some_other_setting' => 'some other value',
+              "some_setting" => "some value",
+              "some_other_setting" => "some other value",
             }
           end
         end
@@ -23,8 +23,8 @@ class Settings
       module Hierarchical
         def self.example
           {
-            'some_namespace' => {
-              'some_setting' => 'some value'
+            "some_namespace" => {
+              "some_setting" => "some value"
             }
           }
         end
@@ -34,7 +34,7 @@ class Settings
         def self.example
           {
             :some_namespace => {
-              :some_setting => 'some value'
+              :some_setting => "some value"
             }
           }
         end

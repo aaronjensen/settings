@@ -1,4 +1,4 @@
-require_relative '../automated_init'
+require_relative "../automated_init"
 
 context "Assignment" do
   test "Determine whether the attribute is a setting" do

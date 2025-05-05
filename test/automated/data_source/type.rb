@@ -1,4 +1,4 @@
-require_relative '../automated_init'
+require_relative "../automated_init"
 
 context "Data Source" do
   context "Type" do
@@ -19,7 +19,7 @@ context "Data Source" do
     end
 
     context "Filepath is the source" do
-      data_source_type = Settings::DataSource::Build.type('some_filepath')
+      data_source_type = Settings::DataSource::Build.type("some_filepath")
 
       test "DataSource::File" do
         assert(data_source_type == Settings::DataSource::File)

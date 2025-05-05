@@ -1,14 +1,14 @@
-ENV['CONSOLE_DEVICE'] ||= 'stdout'
-ENV['LOG_LEVEL'] ||= '_min'
+ENV["CONSOLE_DEVICE"] ||= "stdout"
+ENV["LOG_LEVEL"] ||= "_min"
 
 puts RUBY_DESCRIPTION
 
-require_relative '../init.rb'
+require_relative "../init.rb"
 
-require 'test_bench'; TestBench.activate
+require "test_bench"; TestBench.activate
 
-require 'pp'
-require 'securerandom'
+require "pp"
+require "securerandom"
 
-require 'settings/controls'
+require "settings/controls"
 Controls = Settings::Controls

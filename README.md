@@ -56,7 +56,7 @@ A settings object is built by passing it either:
 A frequent use case will be instantiating `Settings` with a file path:
 
 ```ruby
-settings = Settings.build('settings/example.json')
+settings = Settings.build("settings/example.json")
 ```
 
 Where the data in `settings/example.json` would be:
@@ -98,7 +98,7 @@ A subclass of a `Settings` class can provide either the pathname or the hash of 
 ```ruby
 class SomeSettings < Settings
   def self.data_source
-    'settings/example.json'
+    "settings/example.json"
   end
 end
 
@@ -108,7 +108,7 @@ settings = SomeSettings.build
 There's no need to pass a data source to the build method if a subclass has implemented the `data_source` method. However, if a data source is provided as an argument to the build method when building the subclass, the argument to the build method will have precedence over the subclass's `data_source` method:
 
 ```ruby
-settings = SomeSettings.build('settings/other_example.json')
+settings = SomeSettings.build("settings/other_example.json")
 ```
 
 ## Setting Individual Setting Attributes

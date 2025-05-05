@@ -1,4 +1,4 @@
-require_relative '../../automated_init'
+require_relative "../../automated_init"
 
 context "Set" do
   context "Attribute" do
@@ -20,7 +20,7 @@ context "Set" do
       settings.set(example, attribute: :some_accessor_attribute, strict: false)
 
       test "Sets the attribute" do
-        assert(example.some_accessor_attribute == 'some accessor value')
+        assert(example.some_accessor_attribute == "some accessor value")
       end
     end
   end

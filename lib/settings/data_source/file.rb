@@ -69,7 +69,7 @@ class Settings
 
       module Defaults
         def self.filename
-          'settings.json'
+          "settings.json"
         end
       end
 

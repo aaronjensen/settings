@@ -1,4 +1,4 @@
-require_relative '../../automated_init'
+require_relative "../../automated_init"
 
 context "Data Source" do
   fixture = Module.new do
@@ -11,7 +11,7 @@ context "Data Source" do
     end
 
     def self.default_filename
-      'settings.json'
+      "settings.json"
     end
 
     def self.current_dir_filepath
@@ -35,10 +35,10 @@ context "Data Source" do
       end
 
       context "Source is a Filename" do
-        pathname = fixture.canonical('some_file.json')
+        pathname = fixture.canonical("some_file.json")
 
         test "The current working directory is used" do
-          assert(pathname == fixture.working_dir_filepath('some_file.json'))
+          assert(pathname == fixture.working_dir_filepath("some_file.json"))
         end
       end
 
@@ -51,10 +51,10 @@ context "Data Source" do
       end
 
       context "Source includes both a directory and filename" do
-        pathname = fixture.canonical('some_dir/some_file.json')
+        pathname = fixture.canonical("some_dir/some_file.json")
 
         test "The source is used" do
-          assert(pathname == 'some_dir/some_file.json')
+          assert(pathname == "some_dir/some_file.json")
         end
       end
     end

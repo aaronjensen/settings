@@ -1,4 +1,4 @@
-require_relative '../../automated_init'
+require_relative "../../automated_init"
 
 context "Data Source" do
   context "Hash" do
@@ -8,8 +8,8 @@ context "Data Source" do
 
       test "Converted to strings" do
         assert(data == {
-          'some_namespace' => {
-            'some_setting' => 'some value'
+          "some_namespace" => {
+            "some_setting" => "some value"
           }
         })
       end

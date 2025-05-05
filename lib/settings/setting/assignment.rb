@@ -26,7 +26,7 @@ class Settings
       end
 
       def setter_name(attribute)
-        :"#{attribute.to_s}=" unless attribute.to_s.end_with? '='
+        :"#{attribute.to_s}=" unless attribute.to_s.end_with? "="
       end
 
       module Object

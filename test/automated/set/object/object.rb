@@ -1,4 +1,4 @@
-require_relative '../../automated_init'
+require_relative "../../automated_init"
 
 context "Set" do
   context "Object" do
@@ -9,8 +9,8 @@ context "Set" do
       settings.set(example)
 
       test "Assigns data to the attributes" do
-        assert(example.some_setting == 'some value')
-        assert(example.some_other_setting == 'some other value')
+        assert(example.some_setting == "some value")
+        assert(example.some_other_setting == "some other value")
       end
     end
   end
